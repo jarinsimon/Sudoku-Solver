@@ -23,6 +23,17 @@ def print_board(board):
 			else:
 				print(str(board[i][j]) + " ", end="")
 
+
+
+def find_space(board):
+	for i in range(len(board)):
+		for j in range(len(board[0])):
+			if (board[i][j]==0):
+				return (i, j)
+				
+	return None
+
+
 print("______________________")
 print_board(board)
 
